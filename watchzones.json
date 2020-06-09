@@ -1,14 +1,14 @@
 {
 "watchzones": [
 {
-"latitude": -55.079,
-"longitude": -72.7272,
+"latitude": -33.079,
+"longitude": 150.7272,
 "nickname": "velit qui",
 "radius": 9.66
 },
 {
-"latitude": 15.5552,
-"longitude": 61.2094,
+"latitude": -33.5552,
+"longitude": 150.2094,
 "nickname": "ipsum qui ut aute",
 "radius": 880.23
 }
