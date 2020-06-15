@@ -1,19 +1,19 @@
 {
 "watchzones": [
 {
-"latitude": null,
-"longitude": null,
+"latitude": -33.079,
+"longitude": 150.7272,
 "nickname": "commodo cupidatat in",
-"radius": 2.0047085265548535e+38,
+"radius": 9.66,
 "address": {
 "full": "sunt"
 }
 },
 {
-"latitude": null,
-"longitude": null,
+"latitude": -33.5552,
+"longitude": 150.2094,
 "nickname": "labore est adipisicing cillum dolor",
-"radius": 1.3161029528719372e+38,
+"radius": 48.23,
 "address": {
 "full": "eiusmod"
 }
