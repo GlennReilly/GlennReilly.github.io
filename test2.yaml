@@ -23,15 +23,15 @@ paths:
                 type: string
               examples:
                 fortytwo:
-                  value: '42',
+                  value: 42,
                 thirteen:
-                  value: '13',
+                  value: 13,
                 seven:
-                  value: '7',
+                  value: 7,
                 nine:
-                  value: '9',
+                  value: 9,
                 three:
-                  value: '3'
+                  value: 3
 
   /getAnotherNumber:
     get:
