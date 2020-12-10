@@ -1,0 +1,49 @@
+WIP openapi yaml
+
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Sample API
+  description: A sample API to illustrate OpenAPI concepts
+paths:
+  /list:
+    get:
+      description: Returns a list of stuff
+      responses:
+        '200':
+          description: Successful response
+
+  /getANumber:
+    get:
+      summary: Returns one of the example numbers
+      responses:
+        '200':
+          description: a number is returned
+          content:
+            text/plain:
+              schema:
+                type: integer
+              examples:
+                forty2:
+                  value: 42,
+                thirteen:
+                  value: 13,
+                seven:
+                  value: 7,
+                nine:
+                  value: 9,
+                3:
+                  value: 3
+
+  /getAnotherNumber:
+    get:
+      summary: Returns a number betwixt x and y
+      responses:
+        '200':
+          description: a number is returned
+          content:
+            text/plain:
+              schema:
+                type: integer
+                minimum: -19
+                maximum: 99
