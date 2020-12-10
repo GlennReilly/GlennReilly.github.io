@@ -11,19 +11,25 @@ paths:
         '200':
           description: Successful response
 
-  /getANumber:
+  /getAnArtist:
     get:
-      summary: Returns one of the example numbers
+      summary: Returns an artist
       responses:
         '200':
-          description: a number is returned
+          description: an artist is returned
           content:
-            text/plain:
+            application/json:
               schema:
-                type: string
-              example: 42
+                type: object
+                properties:
+                  artist_name:
+                    type: string
+                  artist_genre:
+                    type: string
+                  albums_recorded:
+                    type: integer
 
-  /getAnotherNumber:
+  /getANumber:
     get:
       summary: Returns a number betwixt x and y
       responses:
