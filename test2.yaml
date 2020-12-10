@@ -21,17 +21,7 @@ paths:
             text/plain:
               schema:
                 type: string
-              examples:
-                fortytwo:
-                  value: 42,
-                thirteen:
-                  value: 13,
-                seven:
-                  value: 7,
-                nine:
-                  value: 9,
-                three:
-                  value: 3
+              example: 42
 
   /getAnotherNumber:
     get:
