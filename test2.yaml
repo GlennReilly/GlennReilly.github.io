@@ -22,7 +22,7 @@ paths:
               schema:
                 type: string
               examples:
-                forty2:
+                fortytwo:
                   value: '42',
                 thirteen:
                   value: '13',
@@ -30,7 +30,7 @@ paths:
                   value: '7',
                 nine:
                   value: '9',
-                3:
+                three:
                   value: '3'
 
   /getAnotherNumber:
