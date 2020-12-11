@@ -36,9 +36,11 @@ paths:
         '200':
           description: a number is returned
           content:
-            text/plain:
+            application/json:
               schema:
                 type: object
                 properties:
-                  value: integer
-                  maximum: 99
+                  value:
+                    type: integer
+                    minimum: -10
+                    maximum: 50
