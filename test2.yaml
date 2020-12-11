@@ -38,6 +38,7 @@ paths:
           content:
             text/plain:
               schema:
-                type: integer
-                minimum: -19
-                maximum: 99
+                type: object
+                properties:
+                  value: integer
+                  maximum: 99
