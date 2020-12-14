@@ -44,3 +44,20 @@ paths:
                     type: integer
                     minimum: -10
                     maximum: 50
+                    
+  /getAnotherNumber:
+    get:
+      summary: Returns a number betwixt x and y
+      responses:
+        '200':
+          description: a number is returned
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  value:
+                    type: integer
+                    minimum: -10
+                    maximum: 50
+                    example: 42
