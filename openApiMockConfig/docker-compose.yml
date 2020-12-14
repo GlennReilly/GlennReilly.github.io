@@ -5,7 +5,7 @@ services:
     container_name: openapi_mock
     image: muonsoft/openapi-mock
     environment:
-      OPENAPI_MOCK_SPECIFICATION_URL: 'https://glennreilly.github.io/test2.yaml'
+      OPENAPI_MOCK_SPECIFICATION_URL: 'https://glennreilly.github.io/openApiMockConfig/openapi_mock_spec_demo_1.yaml'
       OPENAPI_MOCK_USE_EXAMPLES: 'if_present'
     ports:
       - "8080:8080"
