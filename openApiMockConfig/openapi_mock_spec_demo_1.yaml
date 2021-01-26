@@ -15,7 +15,7 @@ paths:
               schema:
                 type: string
                 example: >
-                '[hello]'
+                hello
 
   /getAString:
     get:
