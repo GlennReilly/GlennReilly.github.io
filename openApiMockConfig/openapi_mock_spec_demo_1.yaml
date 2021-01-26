@@ -14,7 +14,7 @@ paths:
             application/html:
               schema:
                 type: string
-                example: 'go to <a href="/getHomeScreenFeed">getHomeScreenFeed</a>'
+                example: go to /getHomeScreenFeed, /getAString, getANumber, /getAnotherNumber or /getAnArtist
                 
   /getHomeScreenFeed:
     get:
