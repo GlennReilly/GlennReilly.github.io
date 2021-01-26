@@ -14,7 +14,7 @@ paths:
             application/json:
               schema:
                 type: string
-                example: go to /getHomeScreenFeed
+                example: 'go to <a href="/getHomeScreenFeed">getHomeScreenFeed</a>'
                 
   /getHomeScreenFeed:
     get:
