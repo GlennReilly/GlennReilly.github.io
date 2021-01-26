@@ -4,27 +4,107 @@ info:
   title: Sample API
   description: A sample API to illustrate OpenAPI concepts
 paths:
+  /getHomeScreenFeed:
+    get:
+      summary: Returns an example Home screen feed json
+      responses:
+        "200":
+          description: a example feed json is returned
+          content:
+            application/json:
+              schema:
+                type: string
+                example: >
+                [
+                  {
+                    "title": "Plan a trip",
+                    "items": [
+                      {
+                        "icon": "ic_flights",
+                        "title": "FLIGHTS",
+                        "type": "link",
+                        "action": "https://www.qantas.com/au/en/book-a-trip/flights/app.html"
+                      },
+                      {
+                        "icon": "ic_hotels",
+                        "title": "HOTELS",
+                        "type": "link",
+                        "action": "https://www.qantas.com/au/en/book-a-trip/hotels-and-airbnb/app.html"
+                      },
+                      {
+                        "icon": "ic_holidays",
+                        "title": "HOLIDAYS",
+                        "type": "link",
+                        "action": "https://www.qantas.com/au/en/book-a-trip/activities.html"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "More from Qantas",
+                    "items": [
+                      {
+                        "icon": "ic_shop",
+                        "title": "SHOP",
+                        "type": "link",
+                        "action": "https://shopping.qantas.com?alt_cam=gl:qd:in:qantasapp:ios:n:shop:qantas-shopping:non-ff%7Cna:earn-shop-now"
+                      },
+                      {
+                        "icon": "ic_rewards",
+                        "title": "REWARDS",
+                        "type": "link",
+                        "action": "https://www.qantasstore.com.au?alt_cam=gl:qd:in:qantasapp:ios:deals:shop:use-points-at-the-rewards-store-start-browsing:non-ff:use-points-at-the-rewards-store-start-browsing"
+                      },
+                      {
+                        "icon": "ic_insurance",
+                        "title": "INSURANCE",
+                        "type": "link",
+                        "action": "https://www.qantasstore.com.au"
+                      },
+                      {
+                        "icon": "ic_money",
+                        "title": "MONEY",
+                        "type": "link",
+                        "action": "https://www.qantasstore.com.au"
+                      },
+                      {
+                        "icon": "ic_creditcards",
+                        "title": "CREDIT CARDS",
+                        "type": "link",
+                        "action": "https://www.qantasstore.com.au"
+                      },
+                      {
+                        "icon": "ic_wine",
+                        "title": "WINE",
+                        "type": "link",
+                        "action": "https://wine.qantas.com/?utm_source=qf_app_feed&utm_medium=general_card&utm_content=cta&utm_campaign=appcard2020&alt_cam=n:n:n:qf_app_feed:general_card:appcard2020:cta:n:n:n"
+                      }
+                    ]
+                  }
+                ]
+
   /getAString:
     get:
       summary: Returns an example String
       responses:
-        '200':
+        "200":
           description: a example string
             application/json:
               schema:
                 type: string
                 example: "This is a string"
+
   /list:
     get:
       description: Returns a list of stuff
       responses:
-        '200':
+        "200":
           description: Successful response
+
   /getAnArtist:
     get:
       summary: Returns an artist
       responses:
-        '200':
+        "200":
           description: an artist is returned
           content:
             application/json:
@@ -37,11 +117,12 @@ paths:
                     type: string
                   albums_recorded:
                     type: integer
+
   /getANumber:
     get:
       summary: Returns a number betwixt x and y
       responses:
-        '200':
+        "200":
           description: a number is returned
           content:
             application/json:
@@ -52,11 +133,12 @@ paths:
                     type: integer
                     minimum: -10
                     maximum: 50
+
   /getAnotherNumber:
     get:
       summary: Returns a number betwixt x and y
       responses:
-        '200':
+        "200":
           description: a number is returned
           content:
             application/json:
