@@ -4,7 +4,6 @@ info:
   title: Sample API
   description: A sample API to illustrate OpenAPI concepts
 paths:
-
   /getAString:
     get:
       summary: Returns an example String
@@ -15,14 +14,12 @@ paths:
               schema:
                 type: string
                 example: "This is a string"
-
   /list:
     get:
       description: Returns a list of stuff
       responses:
         '200':
           description: Successful response
-
   /getAnArtist:
     get:
       summary: Returns an artist
@@ -40,7 +37,6 @@ paths:
                     type: string
                   albums_recorded:
                     type: integer
-
   /getANumber:
     get:
       summary: Returns a number betwixt x and y
@@ -56,7 +52,6 @@ paths:
                     type: integer
                     minimum: -10
                     maximum: 50
-
   /getAnotherNumber:
     get:
       summary: Returns a number betwixt x and y
