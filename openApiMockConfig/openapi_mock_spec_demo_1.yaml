@@ -11,7 +11,7 @@ paths:
         "200":
           description: a example feed json is returned
           content:
-            application/html:
+            application/json:
               schema:
                 type: string
                 example: go to /getHomeScreenFeed, /getAString, getANumber, /getAnotherNumber or /getAnArtist
