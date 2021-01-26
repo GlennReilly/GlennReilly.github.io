@@ -15,8 +15,8 @@ paths:
               schema:
                 type: string
                 example: '[{
-                    "title": "Plan a trip",
-                    "items": ['
+                    "title": "Plan a trip"
+                    }]'
 
   /getAString:
     get:
