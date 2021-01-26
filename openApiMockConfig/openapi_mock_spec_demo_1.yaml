@@ -6,15 +6,15 @@ info:
 paths:
   /:
     get:
-      summary: Default
+      summary: Default path
       responses:
         "200":
-          description: a example feed json is returned
+          description: default path
           content:
             application/json:
               schema:
                 type: string
-                example: go to /getHomeScreenFeed, /getAString, getANumber, /getAnotherNumber or /getAnArtist
+                example: go to /getHomeScreenFeed, /getAString, getANumber, /getAnotherNumber or /getAnObject
                 
   /getHomeScreenFeed:
     get:
@@ -109,22 +109,22 @@ paths:
         "200":
           description: Successful response
 
-  /getAnArtist:
+  /getAnObject:
     get:
-      summary: Returns an artist
+      summary: Returns an object
       responses:
         "200":
-          description: an artist is returned
+          description: an object is returned
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  artist_name:
+                  object_name:
                     type: string
-                  artist_genre:
+                  object_property1:
                     type: string
-                  albums_recorded:
+                  object_property2:
                     type: integer
 
   /getANumber:
@@ -136,7 +136,7 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                type: integer
                 properties:
                   value:
                     type: integer
@@ -148,11 +148,11 @@ paths:
       summary: Returns a number betwixt x and y
       responses:
         "200":
-          description: a number is returned
+          description: a number is returned, should be the example value.
           content:
             application/json:
               schema:
-                type: object
+                type: integer
                 properties:
                   value:
                     type: integer
