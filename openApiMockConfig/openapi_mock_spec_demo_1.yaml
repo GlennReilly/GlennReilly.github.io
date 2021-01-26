@@ -15,7 +15,27 @@ paths:
               schema:
                 type: string
                 example: [{
-                    "title": "Plan a triiip"
+                    "title": "Plan a trip",
+                    "items": [
+                      {
+                        "icon": "ic_flights",
+                        "title": "FLIGHTS",
+                        "type": "link",
+                        "action": "https://www.qantas.com/au/en/book-a-trip/flights/app.html"
+                      },
+                      {
+                        "icon": "ic_hotels",
+                        "title": "HOTELS",
+                        "type": "link",
+                        "action": "https://www.qantas.com/au/en/book-a-trip/hotels-and-airbnb/app.html"
+                      },
+                      {
+                        "icon": "ic_holidays",
+                        "title": "HOLIDAYS",
+                        "type": "link",
+                        "action": "https://www.qantas.com/au/en/book-a-trip/activities.html"
+                      }
+                    ]
                     }]
 
   /getAString:
