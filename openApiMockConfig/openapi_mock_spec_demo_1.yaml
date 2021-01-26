@@ -14,8 +14,7 @@ paths:
             application/json:
               schema:
                 type: string
-                example: >
-                hello
+                example: "hello"
 
   /getAString:
     get:
