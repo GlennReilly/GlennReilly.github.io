@@ -14,9 +14,9 @@ paths:
             application/json:
               schema:
                 type: string
-                example: '[{
+                example: [{
                     "title": "Plan a trip"
-                    }]'
+                    }]
 
   /getAString:
     get:
