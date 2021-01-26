@@ -11,7 +11,7 @@ paths:
         "200":
           description: a example feed json is returned
           content:
-            application/json:
+            application/html:
               schema:
                 type: string
                 example: 'go to <a href="/getHomeScreenFeed">getHomeScreenFeed</a>'
